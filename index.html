@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediafix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Mediafix</h1>
+        <nav>
+            <ul>
+                <li><a href="#media">Calcular Média</a></li>
+                <li><a href="#produto">Calcular Preço com Desconto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="media">
+        <h2>Calcular Média</h2>
+        <form id="formMedia">
+            <label for="nomeAluno">Nome do Aluno:</label>
+            <input type="text" id="nomeAluno" required>
+            <br>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" required>
+            <br>
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" required>
+            <br>
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" required>
+            <br>
+            <button type="button" onclick="calcularMedia()">Calcular Média</button>
+        </form>
+        <p id="resultadoMedia"></p>
+    </section>
+
+    <section id="produto">
+        <h2>Calcular Preço com Desconto</h2>
+        <form id="formProduto">
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" required>
+            <br>
+            <label for="precoProduto">Preço do Produto:</label>
+            <input type="number" id="precoProduto" required>
+            <br>
+            <label for="desconto">Desconto (%):</label>
+            <input type="number" id="desconto" required>
+            <br>
+            <label for="imposto">Imposto (%):</label>
+            <input type="number" id="imposto" required>
+            <br>
+            <button type="button" onclick="calcularPrecoProduto()">Calcular Preço</button>
+        </form>
+        <p id="resultadoProduto"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
